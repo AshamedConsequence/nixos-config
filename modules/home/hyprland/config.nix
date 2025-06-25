@@ -1,7 +1,7 @@
 { ... }:
 let
   browser = "zen-beta";
-  terminal = "ghostty";
+  terminal = "footclient";
 in
 {
   wayland.windowManager.hyprland = {
@@ -21,16 +21,17 @@ in
         "swww-daemon &"
 
         "hyprlock"
+        "foot --server"
 
-        "${terminal} --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
+        # "${terminal} --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false"
         "[workspace 1 silent] ${browser}"
-        "[workspace 2 silent] ${terminal}"
       ];
 
       input = {
-        kb_layout = "us(dvorak)";
-        kb_options = "grp:alt_caps_toggle,caps:swapescape";
+        kb_layout = "us,us(dvorak)";
+        kb_options = "grp:alt_shift_toggle";
         numlock_by_default = true;
+        resolve_binds_by_sym = true;
         repeat_delay = 300;
         follow_mouse = 1;
         float_switch_override_focus = 0;
@@ -54,7 +55,6 @@ in
       };
 
       misc = {
-        disable_autoreload = true;
         disable_hyprland_logo = true;
         always_follow_on_dnd = true;
         layers_hog_keyboard_focus = true;
@@ -147,7 +147,7 @@ in
         "$mainMod, F1, exec, show-keybinds"
 
         # keybindings
-        "$mainMod, Return, exec, ${terminal} --gtk-single-instance=true"
+        "$mainMod, Return, exec, ${terminal}"
         "ALT, Return, exec, [float; size 1111 700] ${terminal}"
         "$mainMod SHIFT, Return, exec, [fullscreen] ${terminal}"
         "$mainMod, B, exec, [workspace 1 silent] ${browser}"

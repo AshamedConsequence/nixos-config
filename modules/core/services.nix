@@ -14,6 +14,11 @@
       gcr
       gnome-settings-daemon
     ];
+
+    emacs = {
+      enable = true;
+      package = pkgs.emacs-pgtk;    # Emacs 27.2
+    };
   };
   services.logind.extraConfig = ''
     # don’t shutdown when power button is short-pressed

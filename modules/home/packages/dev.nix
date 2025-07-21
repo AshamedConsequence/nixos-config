@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     ## Lsp
     nixd # nix
+    typescript-language-server # (type|java)script
 
     ## formating
     shfmt
@@ -20,8 +21,10 @@
     libtool
 
     ## Python
-    python3
-    python312Packages.ipython
+    (python3.withPackages (python-pkgs: [
+        python-pkgs.ipython
+        python-pkgs.debugpy
+    ]))
 
     ## Emacs
     emacs-pgtk    # Emacs 27.2

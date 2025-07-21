@@ -41,7 +41,7 @@ in
       "pulseaudio"
       "network"
       "battery"
-      "hyprland/language"
+      "custom/language"
       "custom/notification"
     ];
     clock = {
@@ -140,10 +140,10 @@ in
       tooltip = true;
       tooltip-format = "{time}";
     };
-    "hyprland/language" = {
+    "custom/language" = {
       format = "<span foreground='#FABD2F'> </span> {}";
-      format-fr = "FR";
-      format-en = "US";
+      exec = "get-layout";
+      interval = "1";
     };
     "custom/launcher" = {
       format = "";

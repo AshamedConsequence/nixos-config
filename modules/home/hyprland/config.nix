@@ -28,8 +28,7 @@ in
       ];
 
       input = {
-        kb_layout = "us,us(dvorak)";
-        kb_options = "grp:alt_shift_toggle";
+        kb_layout = "us";
         numlock_by_default = true;
         resolve_binds_by_sym = true;
         repeat_delay = 300;

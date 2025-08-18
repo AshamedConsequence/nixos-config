@@ -140,11 +140,6 @@ in
       tooltip = true;
       tooltip-format = "{time}";
     };
-    "custom/language" = {
-      format = "<span foreground='#FABD2F'> </span> {}";
-      exec = "get-layout";
-      interval = "1";
-    };
     "custom/launcher" = {
       format = "";
       on-click = "random-wallpaper";

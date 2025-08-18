@@ -26,6 +26,13 @@
         python-pkgs.debugpy
     ]))
 
+    ## Rust
+    rustc
+    cargo
+    rustfmt
+    rust-analyzer
+    clippy
+
     ## Emacs
     emacs-pgtk    # Emacs 27.2
     ripgrep

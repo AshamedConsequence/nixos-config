@@ -61,16 +61,16 @@ in
       format = "{icon}";
       on-click = "activate";
       format-icons = {
-        "1" = "I";
+        "1" = "WWW";
         "2" = "II";
-        "3" = "III";
+        "3" = "DEV";
         "4" = "IV";
         "5" = "V";
         "6" = "VI";
         "7" = "VII";
         "8" = "VIII";
         "9" = "IX";
-        "10" = "X";
+        "10" = "CHAT";
         sort-by-number = true;
       };
       persistent-workspaces = {

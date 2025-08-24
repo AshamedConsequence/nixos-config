@@ -36,6 +36,7 @@
     ## Emacs
     emacs-pgtk    # Emacs 27.2
     ripgrep
+    pandoc
     # optional dependencies
     coreutils # basic GNU utilities
   ];

@@ -14,6 +14,7 @@
       gcr
       gnome-settings-daemon
     ];
+    preload.enable =  true;
 
     emacs = {
       enable = true;

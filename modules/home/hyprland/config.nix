@@ -321,6 +321,7 @@ in
         "workspace 3, class:^(evince)$"
         "workspace 3, class:^(emacs)$"
         "workspace 4, class:^(Gimp-2.10)$"
+        "workspace 4, class:^(REAPER)$"
         "workspace 4, class:^(Aseprite)$"
         "workspace 5, class:^(Audacious)$"
         "workspace 5, class:^(Spotify)$"

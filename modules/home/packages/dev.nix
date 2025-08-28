@@ -21,9 +21,9 @@
     libtool
 
     ## Python
-    (python3.withPackages (python-pkgs: [
-        python-pkgs.ipython
-        python-pkgs.debugpy
+    (python3.withPackages (p: [
+        p.ipython
+        p.debugpy
     ]))
 
     ## Rust

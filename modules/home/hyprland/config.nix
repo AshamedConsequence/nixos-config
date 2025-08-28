@@ -155,7 +155,7 @@ in
         "$mainMod SHIFT, F, fullscreen, 1"
         "$mainMod, Space, exec, toggle-float"
         "$mainMod, E, exec, rofi -show drun || pkill rofi"
-        "$mainMod SHIFT, E, exec, emacs"
+        "$mainMod SHIFT, E, exec, emacsclient -c"
         "$mainMod SHIFT, D, exec, webcord --enable-features=UseOzonePlatform --ozone-platform=wayland"
         # "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"

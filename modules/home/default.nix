@@ -8,6 +8,7 @@
     ./btop.nix                        # resouces monitor 
     ./cava.nix                        # audio visualizer
     ./discord.nix                     # discord
+    ./emacs.nix
     ./fastfetch.nix                   # fetch tool
     ./foot.nix
     ./flow.nix                        # terminal text editor

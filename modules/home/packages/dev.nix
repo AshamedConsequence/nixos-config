@@ -34,7 +34,6 @@
     clippy
 
     ## Emacs
-    emacs-pgtk    # Emacs 27.2
     ripgrep
     pandoc
     # optional dependencies

@@ -2,7 +2,7 @@
 {
   programs.emacs = {
     enable = true;
-    package = pkgs.emacs;    # Emacs 27.2
+    package = pkgs.emacs-pgtk;    # Emacs 27.2
   };
 
   services.emacs = {
